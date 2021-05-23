@@ -1,9 +1,18 @@
 
-import Cart from './Components/Cart/cart';
+import React from 'react'
+import {Redirect, Route, Switch } from 'react-router-dom';
+import ProductAll from "./Pages/ProductAll/productAll";
+import ProductView from "./Pages/ProductView/productView";
+
 function App() {
   return (
     <div className="App">
-        < Cart styles={{width: '300px'}}/>
+      <Switch>        
+        <Route exact path='/'><ProductAll/></Route> 
+        <Route path='/productview'><ProductView /> </Route>
+        <Route path='/'> </Route>
+        <Redirect to="/"/>
+      </Switch>
     </div>
   );
 }

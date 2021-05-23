@@ -1,0 +1,45 @@
+.selectedInput{
+  position: relative;
+  font-size: 12px;
+
+}
+.inputContainer:focus-within{
+  border: 1px solid green;
+}
+.inputContainer{
+  display: flex;
+  overflow: hidden;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  padding: 8px 8px;
+}
+.inputContainer input{
+  border: none;
+  width: 100%;
+}
+
+.inputContainer input:focus{
+  outline: none;
+}
+.selBoxContainer{
+  position: absolute;
+  width: 100%;
+  list-style: none;
+  background-color: whitesmoke;
+}
+.selBoxContainer li{
+  margin-bottom: 5px;
+  cursor: pointer;
+  padding: 10px 10px;
+}
+.selBoxContainer li:hover{
+  background-color: rgb(128 128 128/10%);
+  border-radius: 5px;
+}
+
+ .modalPosition{
+  bottom: 45px;
+}
+.modalPosition li:not(:last-child){
+  border-bottom: 1px solid lightgray;
+}

@@ -1,0 +1,22 @@
+
+.customInput input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333333;
+  font-size: 14px;
+  padding: 8px 0px;
+}
+.customInput label {
+  font-size: 14px;
+    font-weight: 600;
+}
+.customInput input:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #333333;
+}
+.customInput input::placeholder{
+  opacity: .9;
+}
+
