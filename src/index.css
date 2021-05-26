@@ -65,12 +65,5 @@ code {
 }
 
 
-/* link */
 
-.link {
-  text-decoration: none;
-}
 
-.link:hover {
-  color: #219653;
-}

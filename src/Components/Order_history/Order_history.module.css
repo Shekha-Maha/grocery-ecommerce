@@ -25,9 +25,7 @@
    align-items: center;
    justify-content: center;
 }
-.order_processing:hover{
-   border: 2px solid #219653;
-}
+
 
 .order_processing img{
    height: 55px;
@@ -35,7 +33,7 @@
 }
 
 .placement{
-   font-weight: 600;
+   font-weight: 400;
    font-size: 15px;
    line-height: 18px;
    color: #000000;
@@ -97,7 +95,7 @@
    font-weight: 600;
 }
 .order_title_2{
-   font-weight: 600;
+   font-weight: 500;
    font-size: 18px;
    line-height: 29px;
    letter-spacing: -0.0033em;
@@ -198,7 +196,7 @@
    height:100px;
    align-items:center;
 }
-.precessingOrder{
+.processingOrder{
    font-weight: 600;
    font-size: 14px;
    line-height: 17px;
@@ -238,7 +236,7 @@
 
 }
 .mobile_code{
-   font-weight: bold;
+   font-weight: 600;
    font-size: 16px;
    line-height: 17px;
    color: #081F32;

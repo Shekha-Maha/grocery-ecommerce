@@ -1,53 +1,31 @@
 import React from 'react'
 import classes from "./Order_history.module.css"
-import Placed from './asset/order_placed.png'
-import Payment from './asset/payment.png'
-import Delivered from './asset/delivered.png'
-import Processed from './asset/order_processed.png'
-import Pickup from './asset/pickup.png'
-import { Link } from 'react-router-dom'
+import Placed from './Asset/order_placed.png'
+import Payment from './Asset/payment.png'
+import Delivered from './Asset/delivered.png'
+import Processed from './Asset/order_processed.png'
+import Pickup from './Asset/pickup.png'
+
 function Order_status() {
+   const orderstatus = [
+      { id: 0, title: 'Order Placed',alt: 'Order Placed',img: Placed },
+      { id: 1, title: 'Payment Confirmed', alt: 'Payment Confirmed',img:Payment},
+      { id: 2, title: 'Order List', alt: 'Order List', img: Processed},
+      { id: 3, title: 'Ready to Pickup',alt: 'Ready to Pickup',  img: Pickup},
+      { id: 4, title: 'Delivered',alt: 'Delivered',  img: Delivered},
+    ]
    return (
-      <>
          <div className={classes.order_history}>
-               <div className={classes.order_count}>
+            { orderstatus.map(data=>(
+               <div className={classes.order_count} key={data.id} >
                   <div className={classes.order_processing}>
-                     <img src={Placed} alt="placed" />
+                     <img src={data.img} alt={data.alt} />
                   </div>
-                  <p className={classes.placement}>Order Placed</p>
+                  <p className={classes.placement}>{data.title}</p>
                </div>
-
-               <Link to='/' className={classes.order_count}>
-                  <div className={classes.order_processing}>
-                     <img src={Payment} alt="payment" />
-                  </div>
-                  <p className={classes.placement}>Payment Confirmed</p>
-               </Link>
-
-               <Link to='/' className={classes.order_count}>
-                  <div className={classes.order_processing}>
-                     <img src={Processed} alt="processed" />
-                  </div>
-                  <p className={classes.placement}>Order Processed</p>
-               </Link>
-
-               <Link to='/' className={classes.order_count}>
-                  <div className={classes.order_processing}>
-                     <img src={Pickup} alt="pickup" />
-                  </div>
-                  <p className={classes.placement}>Ready to Pickup</p>
-               </Link>
-
-               <Link to='/' className={classes.order_count}>
-                  <div className={classes.order_processing}>
-                     <img src={Delivered} alt="delivered" />
-                  </div>
-                     <p className={classes.placement}>Delivered</p>
-               </Link>
-            </div>
-      </>
-
-
+            ))
+            }    
+         </div>
    )
 }
 

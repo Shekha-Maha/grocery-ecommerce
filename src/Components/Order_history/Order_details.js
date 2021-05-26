@@ -1,10 +1,9 @@
 import React from 'react'
 import classes from "./Order_history.module.css"
-import Product from './asset/productimg.png'
+import Product from './Asset/productimg.png'
 function Order_details() {
-   return (
-      <>     
-         <div className={classes.order_container}>
+    return (
+        <div className={classes.order_container}>
             <div className={classes.scroll}>
                <div className={classes.scroll_view}>
                   <div className={classes.order_background}>
@@ -51,10 +50,10 @@ function Order_details() {
                         <p className={classes.order_side_5}>Capsicum Red Color </p>
                      </div >
                      <div className={classes.order_side_6}>
-                        <p className={classes.precessingOrder}>2 Kg</p>
-                        <p className={classes.precessingOrder}>BDT 2400</p>
-                        <p className={classes.precessingOrder} style={{ color: "#219653" }}>Processing</p>
-                        <p className={classes.precessingOrder}>Give Feedback</p>
+                        <p className={classes.processingOrder}>2 Kg</p>
+                        <p className={classes.processingOrder}>BDT 2400</p>
+                        <p className={classes.processingOrder} style={{ color: "#219653" }}>Processing</p>
+                        <p className={classes.processingOrder}>Give Feedback</p>
                      </div>
                      </div>
                   </div>
@@ -81,9 +80,8 @@ function Order_details() {
                </div>
             </div>
          </div>      
-      </>
-
-   )
+    )
 }
 
 export default Order_details
+

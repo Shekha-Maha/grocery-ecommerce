@@ -1,0 +1,47 @@
+.topnav{
+    height: 55px;
+    background: #219653;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    justify-content:space-between;
+}
+.drawer_btn{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background:transparent;
+    border-style: none;
+}
+.drawer_btn img{
+    height:30px;
+    object-fit: contain;
+}
+.logo{
+    height:35px;
+    object-fit: contain;   
+}
+.search_bar{
+    width:50%;
+}
+.user_log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40px;
+    text-decoration: none;
+}
+.user_log img{
+    height:25px;
+    object-fit: contain;
+}
+.user_log p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+
+}
+
