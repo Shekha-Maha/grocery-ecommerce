@@ -13,7 +13,7 @@ const Cart = (props) => {
     return (
         <div>
             <div className={styles.cartContainer} style={props.styles}>
-                <img src={cartObj.img} alt="" />
+                <img src={cartObj.img} alt="cart" />
                 <p className={styles.title}>{cartObj.title}</p>
                 <p className={styles.text}>{cartObj.ammount}, <span>pricing</span></p>
                 <p className={styles.price}>${cartObj.price}</p>

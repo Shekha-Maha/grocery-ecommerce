@@ -63,3 +63,14 @@ body.BackDropOpenPreventScroll {
 code {
   font-family: 'Montserrat', sans-serif;
 }
+
+
+/* link */
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #219653;
+}
