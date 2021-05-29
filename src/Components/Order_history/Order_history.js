@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from "./Order_history.module.css"
-import Product from './Asset/productimg.png'
+import Product from '../../Asset/productimg.png'
 function Order_history() {
    return (
       <div className={classes.order_info}>

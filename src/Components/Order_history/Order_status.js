@@ -1,10 +1,10 @@
 import React from 'react'
 import classes from "./Order_history.module.css"
-import Placed from './Asset/order_placed.png'
-import Payment from './Asset/payment.png'
-import Delivered from './Asset/delivered.png'
-import Processed from './Asset/order_processed.png'
-import Pickup from './Asset/pickup.png'
+import Placed from '../../Asset/order_placed.png'
+import Payment from '../../Asset/payment.png'
+import Delivered from '../../Asset/delivered.png'
+import Processed from '../../Asset/order_processed.png'
+import Pickup from '../../Asset/pickup.png'
 
 function Order_status() {
    const orderstatus = [

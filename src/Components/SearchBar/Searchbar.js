@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from "./searchbar.module.css"
-import Icon from './Asset/search-icon.png'
+import Icon from "../../Asset/search-icon.png"
 function Searchbar() {
     return (
         <div className={classes.search_bar}>
