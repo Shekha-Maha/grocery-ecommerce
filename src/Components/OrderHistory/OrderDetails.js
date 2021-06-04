@@ -1,14 +1,14 @@
 import React from 'react'
-import classes from "./Order_history.module.css"
+import classes from "./Orderhistory.module.css"
 import Product from '../../Asset/productimg.png'
-function Order_details() {
+function OrderDetails() {
     return (
         <div className={classes.order_container}>
             <div className={classes.scroll}>
                <div className={classes.scroll_view}>
                   <div className={classes.order_background}>
                      <div className={classes.order_side_1}>
-                        <div className={classes.order_numberfirst}>
+                        <div className={classes.order_number}>
                            <p className={classes.order_title_1}>Order number</p>
                            <p className={classes.order_title_2}>DMP-704448640</p>
                         </div>
@@ -83,5 +83,5 @@ function Order_details() {
     )
 }
 
-export default Order_details
+export default OrderDetails
 

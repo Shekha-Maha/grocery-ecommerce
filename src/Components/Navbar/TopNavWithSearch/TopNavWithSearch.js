@@ -4,7 +4,7 @@ import Logo from "../../../Asset/mainlogo.png"
 import Drawer from "../../../Asset/drawer.png"
 import User from '../../../Asset/user.png'
 import { Link } from 'react-router-dom'
-
+import Searchbar from '../../SearchBar/Searchbar'
 
 function TopNavWithSearch() {
     return (
@@ -15,9 +15,14 @@ function TopNavWithSearch() {
                         <button className={classes.drawer_btn}>
                             <img className='img-fluid' src={Drawer} alt="Drawer"/>
                         </button>
-                        
-                        <img className={classes.logo+ ' img-fluid'} src={Logo} alt="logo"/>
-                                               <div className='ms-auto'>
+                        <div className={classes.search_bar}>
+                            <Searchbar />
+                        </div>
+                        <Link  to='/'>
+                            <img className={classes.logo+ ' img-fluid'} src={Logo} alt="logo"/>
+                        </Link>
+                      
+                        <div className='ms-auto'>
                             <Link  to='/' className={classes.user_log}>
                                 <img className={classes.user+ ' img-fuid'} src={User} alt="user"/>
                                 <p>Account</p>

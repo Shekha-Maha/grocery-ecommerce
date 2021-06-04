@@ -1,0 +1,46 @@
+.SideDrawer {
+    width: 290px;
+    height: 100%;
+    background: #ffffff;
+    position: fixed;
+    margin-top: 60px;
+    margin-left: 0;
+  }
+.Logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:80px;
+    border-bottom: 1px solid #E6E6E6;
+
+}
+.Logo > img{
+    height: 40px;
+    object-fit: contain;
+}
+
+.Link,
+.SubLink {
+  padding: 6px;
+  
+}
+
+/* .Active {
+  color: #0f9cee !important;
+  background-color: #0f9cee2d;
+} */
+
+.Icon {
+  height: 25px;
+  object-fit: contain;
+  margin-left: 20px;
+
+}
+
+.HasSubList {
+}
+
+.SubListItems {
+  margin-left: 25px;
+}
+

@@ -1,7 +1,7 @@
 import React from 'react'
-import classes from "./Order_history.module.css"
+import classes from "./Orderhistory.module.css"
 import Product from '../../Asset/productimg.png'
-function Order_history() {
+function OrderHistory() {
    return (
       <div className={classes.order_info}>
          <div className={classes.Order_list}>
@@ -29,5 +29,5 @@ function Order_history() {
    )
 }
 
-export default Order_history
+export default OrderHistory
 

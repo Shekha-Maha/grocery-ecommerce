@@ -33,7 +33,7 @@
 }
 
 .placement{
-   font-weight: 400;
+   font-weight: 500;
    font-size: 15px;
    line-height: 18px;
    color: #000000;
@@ -42,9 +42,7 @@
    text-align: center;
 }
 
-.placement:hover{
-   color: #219653;
-}
+
 
 
 /* order details */
@@ -74,13 +72,15 @@
    display: flex;
    justify-content: space-between;
 }
-.order_numberfirst{
-   flex: 25%;
-}
+
 .order_number{
    flex: 25%;
    border-left: 1px solid #7487CC;
 }
+.order_number:first-child{
+   border-left:none;
+}
+
 .detail_padding{
    padding:30px;
 
